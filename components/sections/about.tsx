@@ -11,14 +11,11 @@ export default function About() {
                 Our Story
               </h2>
               <p className="text-muted-foreground mb-4">
-                Founded in 2018, LumenDev began with a vision to bridge the gap between
-                technical excellence and beautiful design. What started as a small team
-                of passionate developers has grown into a full-service digital agency.
+                Founded in 2018, LumenDev is a full-service digital agency specializing in the intersection of technical excellence and beautiful design. Our team of expert developers and designers has helped over 100 businesses worldwide transform their digital presence.
+
               </p>
               <p className="text-muted-foreground mb-6">
-                We&apos;ve helped over 100 businesses across the globe transform their digital
-                presence and create impactful applications that drive real results. Our
-                approach combines technical innovation with user-centered design principles.
+                We build impactful applications that drive real results by combining technical innovation with user-centered design. Whether you need a new website, a custom web application, or a complete digital overhaul, LumenDev delivers solutions that are both powerful and visually stunning.
               </p>
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">

@@ -17,12 +17,44 @@ const services = [
     features: [
       "Custom web application development",
       "Progressive Web Apps (PWAs)",
-      "Front-end development (React, Angular, Vue)",
+      "Front-end development (Next.js, React, Angular, Vue)",
       "Back-end development (Node.js, Python, PHP)",
       "E-commerce solutions",
       "Content Management Systems",
     ],
     image: "https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    id: "ai",
+    title: "AI & Machine Learning",
+    icon: <Cpu className="h-5 w-5" />,
+    description:
+      "We develop custom AI and machine learning solutions that automate processes, derive insights from data, and create intelligent applications.",
+    features: [
+      "Custom AI Assistant",
+      "Natural language processing",
+      "Computer vision applications",
+      "Custom AI Models",
+      "AI model development and training",
+      "AI integration with existing systems",
+    ],
+    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    id: "ecommerce",
+    title: "E-Commerce",
+    icon: <Globe className="h-5 w-5" />,
+    description:
+      "We develop custom e-commerce solutions that drive sales, enhance customer experience, and streamline operations for businesses of all sizes.",
+    features: [
+      "Custom web application development",
+      "Shopify and WooCommerce development",
+      "Payment gateway integration",
+      "Inventory management systems",
+      "Order fulfillment automation",
+      "E-commerce analytics and reporting",
+    ],
+    image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: "cloud",
@@ -39,38 +71,6 @@ const services = [
       "Cloud migration strategies",
     ],
     image: "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  },
-  {
-    id: "ecommerce",
-    title: "E-Commerce",
-    icon: <Globe className="h-5 w-5" />,
-    description:
-      "We develop custom e-commerce solutions that drive sales, enhance customer experience, and streamline operations for businesses of all sizes.",
-    features: [
-      "Custom e-commerce platforms",
-      "Shopify and WooCommerce development",
-      "Payment gateway integration",
-      "Inventory management systems",
-      "Order fulfillment automation",
-      "E-commerce analytics and reporting",
-    ],
-    image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  },
-  {
-    id: "ai",
-    title: "AI & Machine Learning",
-    icon: <Cpu className="h-5 w-5" />,
-    description:
-      "We develop custom AI and machine learning solutions that automate processes, derive insights from data, and create intelligent applications.",
-    features: [
-      "Predictive analytics",
-      "Natural language processing",
-      "Computer vision applications",
-      "Recommendation systems",
-      "AI model development and training",
-      "AI integration with existing systems",
-    ],
-    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
 ];
 
@@ -126,7 +126,7 @@ export default function Services() {
                     <p className="text-muted-foreground mb-6">
                       {service.description}
                     </p>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+                                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {service.features.map((feature, index) => (
                         <li
                           key={index}
@@ -138,20 +138,19 @@ export default function Services() {
                               width="12"
                               height="12"
                               viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="3"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            >
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </div>
-                          <span className="text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button>Learn More</Button>
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span className="text-sm">{feature}</span>
+                </li>
+              ))}
+            </ul>
                   </motion.div>
                 </div>
 

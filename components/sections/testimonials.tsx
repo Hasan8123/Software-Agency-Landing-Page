@@ -11,7 +11,7 @@ const testimonials = [
   {
     id: 1,
     content:
-      "LumenDev transformed our outdated website into a modern, user-friendly platform that perfectly represents our brand. The team was professional, responsive, and delivered beyond our expectations.",
+    "LumenDev helped us with a complete website redesign, transforming our outdated site into a modern, user-friendly platform. Their professional and responsive team delivered a website development solution that perfectly represents our brand and exceeded our expectations.",
     author: "Sarah Johnson",
     position: "Marketing Director",
     company: "TechInnovate Inc.",
@@ -20,7 +20,7 @@ const testimonials = [
   {
     id: 2,
     content:
-      "Working with LumenDev on our mobile app was a game-changer for our business. Their attention to detail and technical expertise resulted in an app that our customers love using. We've seen a 40% increase in engagement since launch.",
+      "LumenDev's expertise in mobile app development transformed our business. They delivered an app that our customers love and helped us achieve a 40% increase in engagement. A truly exceptional team.",
     author: "Michael Chen",
     position: "CEO",
     company: "GrowFast Solutions",
@@ -29,7 +29,7 @@ const testimonials = [
   {
     id: 3,
     content:
-      "The e-commerce platform LumenDev built for us has dramatically improved our conversion rates and customer satisfaction. Their team took the time to understand our unique needs and delivered a solution that exceeded our expectations.",
+      "LumenDev's e-commerce platform development was a game-changer for our business. The new platform has dramatically improved our conversion rates and boosted customer satisfaction. Their team took the time to understand our unique needs and delivered a solution that truly exceeded our expectations.",
     author: "Emily Rodriguez",
     position: "E-Commerce Manager",
     company: "StyleHouse",
@@ -38,7 +38,7 @@ const testimonials = [
   {
     id: 4,
     content:
-      "We approached LumenDev with a complex software challenge, and they delivered an elegant solution on time and within budget. Their technical knowledge combined with their strategic thinking made them the perfect partner.",
+      "LumenDev's custom software development expertise helped us solve a complex challenge. Their team provided an elegant solution that was delivered on time and within our budget. Their technical knowledge and strategic thinking truly made them the perfect partner.",
     author: "James Wilson",
     position: "CTO",
     company: "DataFlow Systems",
@@ -47,7 +47,7 @@ const testimonials = [
   {
     id: 5,
     content:
-      "LumenDev's redesign of our SaaS platform significantly improved user experience and helped us reduce churn by 25%. Their team was collaborative, insightful, and truly cared about our product's success.",
+      "LumenDev's SaaS platform redesign was a game-changer. It significantly improved our user experience and helped us reduce churn by an impressive 25%. Their team was collaborative, insightful, and truly invested in our product's success.",
     author: "Amanda Park",
     position: "Product Manager",
     company: "CloudSync",
@@ -120,7 +120,7 @@ export default function Testimonials() {
   }, [currentIndex, isAnimating, handleNext]);
   
   return (
-    <section id="testimonials" className="py-24 bg-muted/30">
+    <section id="testimonials" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-[800px] mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Client Testimonials</h2>

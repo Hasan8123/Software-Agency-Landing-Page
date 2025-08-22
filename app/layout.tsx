@@ -24,9 +24,10 @@ function ClientLayout({ children }: { children: React.ReactNode }) {
     <ClientWrapper>
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="dark"
         enableSystem
         disableTransitionOnChange
+        storageKey="lumen-theme"
       >
         {children}
       </ThemeProvider>

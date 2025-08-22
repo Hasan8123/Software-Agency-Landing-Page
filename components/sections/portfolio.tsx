@@ -80,7 +80,7 @@ const projects = [
     description: "Advanced computer vision platform for automated quality control in manufacturing",
     image: "https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: ["ai", "saas"],
-    tags: ["Python", "TensorFlow", "OpenCV", "FastAPI"],
+    tags: ["Python", "TensorFlow", "OpenCV", "FastAPI", "OpenAI SDK"],
   },
 ];
 
@@ -94,7 +94,7 @@ export default function Portfolio() {
       : projects.filter((project) => project.category.includes(selectedCategory));
 
   return (
-    <section id="portfolio" className="py-24">
+    <section id="portfolio" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-[800px] mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Work</h2>
@@ -148,15 +148,7 @@ export default function Portfolio() {
                   <CardTitle className="text-xl">{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
-                <CardFooter>
-                  <Button
-                    variant="ghost"
-                    className="p-0 h-auto text-primary hover:text-primary/80 hover:bg-transparent"
-                  >
-                    View Case Study
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardFooter>
+
               </Card>
             </motion.div>
           ))}

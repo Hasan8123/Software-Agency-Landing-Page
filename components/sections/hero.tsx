@@ -63,11 +63,30 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto">
+            <Button 
+              size="lg" 
+              className="w-full sm:w-auto"
+              onClick={() => {
+                const servicesSection = document.querySelector("#services");
+                if (servicesSection) {
+                  servicesSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Get Started
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="w-full sm:w-auto"
+              onClick={() => {
+                const portfolioSection = document.querySelector("#portfolio");
+                if (portfolioSection) {
+                  portfolioSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               View Our Work
             </Button>
           </div>

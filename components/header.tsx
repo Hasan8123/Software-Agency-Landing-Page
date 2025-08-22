@@ -11,9 +11,7 @@ const navigation = [
   { name: "Services", href: "#services" },
   { name: "Work", href: "#portfolio" },
   { name: "About", href: "#about" },
-  { name: "Team", href: "#team" },
   { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
@@ -76,7 +74,6 @@ export default function Header() {
             </a>
           ))}
           <ThemeToggle />
-          <Button size="sm" disabled>Get in Touch</Button>
         </nav>
 
         {/* Mobile Navigation Toggle */}
@@ -114,9 +111,6 @@ export default function Header() {
                 {item.name}
               </a>
             ))}
-            <div className="px-3 py-2">
-              <Button className="w-full" disabled>Get in Touch</Button>
-            </div>
           </div>
         </div>
       )}

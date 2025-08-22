@@ -20,7 +20,6 @@ const footerLinks = [
     links: [
       { name: "About", href: "#about" },
       { name: "Services", href: "#services" },
-      { name: "Team", href: "#team" },
       { name: "Careers", href: "#careers" },
       { name: "Press", href: "#press" },
     ],
@@ -74,7 +73,7 @@ export default function Footer() {
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 text-primary mr-2" />
                 <span className="text-sm text-muted-foreground">
-                  123 Innovation Way, San Francisco, CA 94107
+                  London, UK
                 </span>
               </div>
               <div className="flex items-center">
@@ -86,7 +85,7 @@ export default function Footer() {
               <div className="flex items-center">
                 <Phone className="h-4 w-4 text-primary mr-2" />
                 <span className="text-sm text-muted-foreground">
-                  +1 (555) 123-4567
+                  +44 7552 078567
                 </span>
               </div>
             </div>
